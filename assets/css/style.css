@@ -1,0 +1,82 @@
+/*
+Theme Name: Portfólio
+Theme URI: http://www.desenvolvimentos.com.br
+Author: Kenzie Academy BR
+Author URI: https://kenzie.com.br;
+Description: Descrição do thema.
+Version: 1.0
+
+--------------------------------------------
+ESTRUTURAÇÃO BASE
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+*/
+
+/* VARIÁVEIS */
+:root{}
+/* VARIÁVEIS */
+  
+  
+/* GERAL */
+html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+/* GERAL */
+  
+/* HTML */
+html{}
+/* HTML */
+  
+/* BODY */
+body{}
+/* BODY */
+  
+
+/* HEADER */
+header{}
+/* HEADER */
+  
+
+/* FOOTER */
+footer{}
+/* FOOTER */
+
+  
+/* INICIAL */
+main{}
+/* INICIAL */
+  
+
+/* EXTRAS */
+
+/* para estilizar a scrollbar */
+::-webkit-scrollbar{}
+::-webkit-scrollbar-button{}
+::-webkit-scrollbar-track{}
+::-webkit-scrollbar-track-piece{}
+::-webkit-scrollbar-thumb{}
+::-webkit-scrollbar-corner{}
+::-webkit-resizer{}
+/* EXTRAS */
+  
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 400px){}
+
+@media screen and (min-width: 800px){}
+/* MEDIA QUERIES */
