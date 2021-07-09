@@ -6,13 +6,17 @@
     --azul-padrao:#307CFF;
     --branco:#fff;
     --preto:#000;
-
 }
 /* VARIÁVEIS */
  
+
+/* FONTES */
+
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Raleway:ital,wght@1,300&family=Roboto:wght@100&display=swap');
 
+/* FONTES */
   
+
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a{
     margin: 0;
