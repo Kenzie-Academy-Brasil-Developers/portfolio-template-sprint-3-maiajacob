@@ -36,11 +36,10 @@ html{
   
 /* BODY */
 body{
+    display: flex;
+    flex-direction: column;
     min-width: 1400px;
-    max-width: 1800px;
-    width: 100%;
     padding: 20px 200px;
-    align-content: center;
     background-color: var(--branco);
 }
 /* BODY */
