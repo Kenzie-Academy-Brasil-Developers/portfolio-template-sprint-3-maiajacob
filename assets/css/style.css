@@ -1,66 +1,206 @@
-/*
-Theme Name: Portfólio
-Theme URI: http://www.desenvolvimentos.com.br
-Author: Kenzie Academy BR
-Author URI: https://kenzie.com.br;
-Description: Descrição do thema.
-Version: 1.0
-
---------------------------------------------
-ESTRUTURAÇÃO BASE
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** ESTILOS GERAIS
-**** BODY
-**** HEADER
-**** FOOTER
-**** PÁGINA INICIAL
-**** EXTRAS
-**** @MEDIA
-
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-*/
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --azul-claro:#D6F5FF;
+    --azul-escuro:#183E80;
+    --azul-padrao:#307CFF;
+    --branco:#fff;
+    --preto:#000;
+}
 /* VARIÁVEIS */
+ 
+
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Raleway:ital,wght@1,300&family=Roboto:wght@100&display=swap');
+
+/* FONTES */
   
-  
+
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
     list-style: none;
     text-decoration: none;
 }
+
+figcaption {
+    display: none;
+}
 /* GERAL */
   
-/* HTML */
-html{}
-/* HTML */
   
 /* BODY */
-body{}
+body{
+    display: flex;
+    flex-direction: column;
+    min-width: 1400px;
+    padding: 20px 200px;
+    background-color: var(--branco);
+}
 /* BODY */
-  
+
+/* H1, H2 e P GERAIS */
+h1 {
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    align-items: flex-end;
+    padding: 40px 50px 5px 20px;
+    margin-left: 80px;
+}
+
+h2 {
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 1.5em;
+    font-style: italic;
+    padding: 20px 0px 20px 5px;
+    color: var(--azul-escuro);    
+}
+
+h2:hover {
+    padding-left: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+/* H1, H2 e P GERAIS */
 
 /* HEADER */
-header{}
+#img-header {
+    width: 150px;
+    padding-right: 200px;
+    position: relative;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 175px;
+    color: var(--branco);
+    background-color: var(--azul-padrao);
+}
 /* HEADER */
-  
+
+/* MAIN - ASIDE */
+main {
+    display: flex;
+}
+
+.secao-lateral {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 80px 0px;
+    text-align: justify;
+    color: var(--azul-escuro);
+    background-color: var(--azul-claro);
+}
+
+
+.secao-lateral__p1, .secao-lateral__p2 {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--branco);
+    padding-left: 20px;
+}
+
+.secao-lateral__p1 {
+    margin-bottom: 150px;
+}
+
+.secao-principal {
+    display: flex;
+    flex-direction: column;
+    width: 880px;
+}
+
+.secao-principal__informacoes, 
+.secao-principal__experiencia,
+.secao-principal__skills,
+.secao-principal__contato {
+    padding: 20px 50px;
+}
+
+
+.informacoes__p {
+    padding-left: 10px;
+    border-left: 4px solid transparent;
+}
+.informacoes__p:hover {
+    background-color: var(--azul-claro);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: solid 4px var(--azul-escuro);
+    transition: 0.8s;
+}
+
+.experiencia {
+    padding-left: 10px;
+    border-left: 4px solid transparent;
+}
+
+.experiencia:hover {
+    background-color: var(--azul-claro);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: solid 4px var(--azul-escuro);
+    transition: 0.8s;
+}
+
+.ul-skills__flex {
+    display: flex;
+    justify-content: space-between;
+    line-height: 3;
+    padding-left: 20px;
+    border-left: 4px solid transparent;
+}
+
+.hard-skills {
+    padding-right: 10px;
+}
+
+.soft-skills {
+    list-style: disc;
+}
+
+.ul-skills__flex:hover {
+    background-color: var(--azul-claro);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: solid 4px var(--azul-escuro);
+    transition: 0.8s;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+/* MAIN - ASIDE */
+
 
 /* FOOTER */
-footer{}
+footer {
+    background-color: var(--azul-padrao);
+    color: var(--branco);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+}
 /* FOOTER */
-
-  
-/* INICIAL */
-main{}
-/* INICIAL */
-  
+ 
 
 /* EXTRAS */
 
@@ -76,7 +216,11 @@ main{}
   
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 400px){}
+@media screen and (min-width: 400px){
 
-@media screen and (min-width: 800px){}
+}
+
+@media screen and (min-width: 800px){
+
+}
 /* MEDIA QUERIES */
